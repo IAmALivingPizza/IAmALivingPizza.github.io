@@ -1,0 +1,37 @@
+main{
+	background-color: LightGreen;
+}
+
+header h1{
+	text-align: center;
+}
+
+nav{
+	
+}
+nav ul{
+	list-style-type: none;
+	margin: 0;
+	text-align: center;
+}
+
+nav li{
+	display: inline-block;
+	font-size; 1.75em;
+}
+
+nav li a{
+	display: block;
+	text-decoration: none;
+	color: black;
+	padding: .5em 1em;
+}
+
+main h2{
+	text-align: center;
+}
+
+main iframe{
+	margin: 0 20%;
+}
+	
