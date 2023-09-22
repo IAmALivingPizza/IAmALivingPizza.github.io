@@ -1,4 +1,11 @@
-main{
+body {
+	background-color: skyBlue;
+}
+iframe {
+	width: 1000px;
+	height: 350px;
+}
+.webpage{
 	background-color: LightGreen;
 }
 
