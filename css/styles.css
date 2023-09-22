@@ -1,5 +1,5 @@
-body {
-	background-color: skyBlue;
+body{
+	background-color: lightBlue;
 }
 iframe {
 	width: 1000px;
@@ -24,13 +24,14 @@ nav ul{
 
 nav li{
 	display: inline-block;
-	font-size; 1.75em;
+	font-size: 1.75em;
+	font-weight: bold
 }
 
 nav li a{
 	display: block;
 	text-decoration: none;
-	color: black;
+	color: white;
 	padding: .5em 1em;
 }
 
@@ -41,4 +42,8 @@ main h2{
 main iframe{
 	margin: 0 20%;
 }
-	
+
+table, th, td{
+	border: 1px solid;
+	margin: 0 31% 0;
+}
