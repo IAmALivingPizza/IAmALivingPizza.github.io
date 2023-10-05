@@ -1,53 +1,137 @@
-body{
-	background-color: lightBlue;
-}
-iframe {
-	width: 1000px;
-	height: 350px;
-}
-.webpage{
-	background-color: LightGreen;
+/*
+Name: Lucas Rosenberger
+Date: September 21, 2023
+*/
+/*css reset*/
+body, header, nav, main, footer, h1, div, img, ul{
+	margin: 0;
+	padding: 0;
+	border: 0;
 }
 
-header h1{
-	text-align: center;
+body{
+	background-color: #000;
+}
+img{
+	max-width: 100%;
+	display: block;
+}
+
+/*  Style rules for mobile viewport */
+header{
+	position: -webkit-sticky;
+	position: sticky;
+	top: 0;
+	background-color: #000;
+	height: 190px;
+}
+
+header img{
+	margin: 0 auto;
 }
 
 nav{
-	
+	padding: 1%;
+	margin-bottom: 1%
+}
+main{
+	background-color: #fff;
+	padding: 2%;
+	font-size: 1.5em;
+	font-family: 'Roboto Slab', serif;
+}
+.tel-link{
+	background-color: #404040;
+	padding: 2%;
+	margin: 0 auto;
+	width: 80%;
+	text-align: center;
+	border-radius: 5px;
+}
+.tel-link a{
+	color: #fff;
+	text-decoration: none;
+	font-size: 1.5em;
+	display: block;
+}
+.hours{
+	margin-left: 10%;
+}
+.action{
+	font-size: 1.35em;
+	color: #660;
+	font-weight: bold;
+}
+.external-link{
+	text-decoration: none;
+	color: #660;
+	font-weight: bold;
+}
+#weights, #cardio, #training{
+	margin: 0 2%;
+}
+.round{
+	border-radius: 8px;
+}
+/*#exercises{
+	clear: left;
+	border-top: 1px solid #000;
+	border-bottom: 1px solid #000;
+	background-color: #f2f2f2;
+	padding: 1% 2%;
+}
+#exercises dt{
+	font-weight: bold;
+}
+#exercises dd{
+	padding: .5% 1% 2% 0;
+}*/
+#contact{
+	text-align: center;
+}
+#contact .contact-email-link{
+	text-decoration: none;
+	color: #660; /*666600*/
+}
+.map{
+	border: 2px solid #000;
+	width: 95%;
+	height: 50%;
 }
 nav ul{
 	list-style-type: none;
-	margin: 0;
 	text-align: center;
 }
-
 nav li{
-	display: inline-block;
-	font-size: 1.75em;
-	font-weight: bold
+	font-size: 1.5em;
+	font-family: 'Francois One', sans-serif;
+	border-top: 1px solid #fff;
 }
-
+nav li:first-child{
+	border-top: none;
+}
 nav li a{
 	display: block;
-	text-decoration: none;
-	color: white;
+	color: #fff;
 	padding: .5em 1em;
+	text-decoration: none;
 }
 
-main h2{
+/*show mobile class, hide table-desktop class */
+.mobile{
+	display: block;
+}
+.tablet-desktop{
+	display: none;
+}
+
+footer p{
+	font-size: .75em;
 	text-align: center;
+	color: #fff;
+	padding: 0em;
 }
-
-main iframe{
-	margin: 0 20%;
-}
-
-table, th, td{
-	border: 1px solid;
-	margin: 0 28% 0;
-}
-
-td {
-	text-align: center;
+footer p a{
+	color: #fff;
+	text-decoration: none;
 }
