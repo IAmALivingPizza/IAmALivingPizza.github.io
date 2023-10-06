@@ -13,14 +13,19 @@ body{
 	height: 450px;
 	border: 5px solid red;
 	float: right;
-	margin: 0 10em 0;
 }
 .webpage{
 	background-color: LightGreen;
 	border: 5px solid;
 }
+
+header{
+	border: 5px ridge black;
+	background-color: lightGray;
+}
 header h1{
 	text-align: center;
+	font-size: 100px;
 }
 
 nav ul{
@@ -32,17 +37,21 @@ nav ul{
 nav li{
 	display: inline-block;
 	font-size: 1.75em;
-	font-weight: bold
+	font-weight: bold;
+	background-color: lightGray;
 }
 
 nav li a{
 	display: block;
 	text-decoration: none;
-	color: white;
+	color: black;
 	padding: .5em 1em;
 	outline: #000 ridge 6px;
 }
 
+main h1{
+	text-align: center;
+}
 main h2{
 	text-align: center;
 }
@@ -51,11 +60,26 @@ main h6{
 	text-align: center;
 }
 
+a{
+	text-decoration: none;
+	color: black;
+}
+
 #funny1{
 	width: 500px;
 	height: 450px;
 	border: 5px solid blue;
 	filter: grayscale(100%) sepia(100%) brightness(200%) saturate(800%);
+}
+
+#amogus{
+	border: 5px ridge black;
+	float: right;
+}
+
+#amogus-2{
+	border: 5px ridge black;
+	float: left;
 }
 
 table, th, td{
@@ -71,9 +95,19 @@ tr a{
 	text-decoration: none;
 }
 
-#ambrose-world{
-	border: 5px solid #000
+.favorites{
+	text-align: center;
+	font-size: 2em;
+}
+
+li{
 	margin: 0% auto;
+	list-style-type: none;
+}
+
+#ambrose-world{
+	border: 5px solid #000;
+	margin: center;
 }
 
  /*audio {
