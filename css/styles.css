@@ -11,12 +11,12 @@ body{
 	display: block;
 	width: 1000px;
 	height: 450px;
-	border: 5px solid red;
+	border: 5px ridge black;
 	float: right;
 }
 .webpage{
-	background-color: LightGreen;
-	border: 5px solid;
+	background-color: lightGray;
+	border: 5px ridge black;
 }
 
 header{
@@ -60,6 +60,11 @@ main h6{
 	text-align: center;
 }
 
+#about-main{
+	margin: 0 auto;
+	width: 50%;
+}
+
 a{
 	text-decoration: none;
 	color: black;
@@ -68,8 +73,7 @@ a{
 #funny1{
 	width: 500px;
 	height: 450px;
-	border: 5px solid blue;
-	filter: grayscale(100%) sepia(100%) brightness(200%) saturate(800%);
+	border: 5px ridge black;
 }
 
 #amogus{
@@ -107,7 +111,7 @@ li{
 
 #ambrose-world{
 	border: 5px solid #000;
-	margin: center;
+	width: 100%;
 }
 
  /*audio {
