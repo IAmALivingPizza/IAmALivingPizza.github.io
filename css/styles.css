@@ -6,6 +6,7 @@ body, header, nav, main, footer, h1, div, img{
 
 body{
 	background-color: lightBlue;
+	background-position: center;
 }
 #WWII {
 	display: block;
@@ -21,7 +22,7 @@ body{
 
 header{
 	border: 5px ridge black;
-	background-color: lightGray;
+	background-color: lightGray
 }
 header h1{
 	text-align: center;
@@ -49,6 +50,10 @@ nav li a{
 	outline: #000 ridge 6px;
 }
 
+.nav-icon{
+	background-color: red;
+}
+
 main h1{
 	text-align: center;
 }
@@ -60,6 +65,14 @@ main h6{
 	text-align: center;
 }
 
+#first{
+	color: purple;
+}
+
+#second{
+	color: darkCyan;
+}
+
 #about-main{
 	margin: 0 auto;
 	width: 50%;
@@ -67,7 +80,6 @@ main h6{
 
 a{
 	text-decoration: none;
-	color: black;
 }
 
 #funny1{
@@ -101,7 +113,16 @@ tr a{
 
 .favorites{
 	text-align: center;
+	padding-left: 0;
 	font-size: 2em;
+	outline: #000 ridge 6px;
+	width: 26.5%;
+	margin: 0% auto;
+	background-color: lightGray;
+}
+
+.items{
+	color: black;
 }
 
 li{
