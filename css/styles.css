@@ -14,6 +14,7 @@ body{
 	height: 450px;
 	border: 5px ridge black;
 	float: right;
+	margin: 0 5em 4em;
 }
 .webpage{
 	background-color: lightGray;
@@ -27,19 +28,46 @@ header{
 header h1{
 	text-align: center;
 	font-size: 100px;
+	font-family: 'Pixelify Sans', serif;
+}
+
+.red{
+	color: red;
+}
+
+.blue{
+	color: blue;
+}
+
+.green{
+	color: green;
+}
+
+.yellow{
+	color: yellow;
+}
+
+.orange{
+	color: orange;
 }
 
 nav ul{
 	list-style-type: none;
-	margin: 20px;
+	margin: 1 5em;
+	width: 1780px;
 	text-align: center;
+	
 }
 
 nav li{
-	display: inline-block;
+	display: block;
+	margin: 1em;
+	font-family: 'Pixelify Sans', serif;
 	font-size: 1.75em;
 	font-weight: bold;
 	background-color: lightGray;
+	border: #000 ridge 5px;
+	border-radius: 20px;
 }
 
 nav li a{
@@ -47,11 +75,10 @@ nav li a{
 	text-decoration: none;
 	color: black;
 	padding: .5em 1em;
-	outline: #000 ridge 6px;
 }
 
-.nav-icon{
-	background-color: red;
+nav li:hover{
+	background: gray 20px;
 }
 
 main h1{
@@ -86,6 +113,7 @@ a{
 	width: 500px;
 	height: 450px;
 	border: 5px ridge black;
+	margin: 0 5em 4em;
 }
 
 #amogus{
@@ -101,6 +129,7 @@ a{
 table, th, td{
 	border: 1px solid;
 	margin: 0 28% 0;
+	background-color: lightGray
 }
 
 td {
@@ -113,21 +142,18 @@ tr a{
 
 .favorites{
 	text-align: center;
+	list-style-type: none;
 	padding-left: 0;
 	font-size: 2em;
 	outline: #000 ridge 6px;
 	width: 26.5%;
 	margin: 0% auto;
+	margin-top: 1em;
 	background-color: lightGray;
 }
 
 .items{
 	color: black;
-}
-
-li{
-	margin: 0% auto;
-	list-style-type: none;
 }
 
 #ambrose-world{
@@ -148,4 +174,5 @@ footer p{
 
 footer p a{
 	text-decoration: none;
+	color: black;
 }
