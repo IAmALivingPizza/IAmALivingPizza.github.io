@@ -5,7 +5,7 @@ body, header, nav, main, footer, h1, div, img{
 } 
 
 body{
-	background-color: lightBlue;
+	background-color: #152238;
 	background-position: center;
 }
 #WWII {
@@ -23,7 +23,9 @@ body{
 
 header{
 	border: 5px ridge black;
-	background-color: lightGray
+	background-color: lightGray;
+	margin: 0 100px;
+	border-radius: 70px;
 }
 header h1{
 	text-align: center;
@@ -79,6 +81,7 @@ nav li a{
 
 nav li:hover{
 	background: gray 20px;
+	box-shadow: 5px 5px 10px yellow;
 }
 
 main h1{
@@ -128,8 +131,10 @@ a{
 
 table, th, td{
 	border: 1px solid;
-	margin: 0 28% 0;
-	background-color: lightGray
+	/*margin: 0 28% 0;*/
+	margin: 0% auto;
+	background-color: lightGray;
+	font-size: 20px;
 }
 
 td {
