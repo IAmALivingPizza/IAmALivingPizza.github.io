@@ -1,0 +1,60 @@
+/*
+Author: Lucas Rosenberger
+Date: October 26, 2023
+File Name: styles07.css
+*/
+
+/* CSS Reset */
+body, header, main, footer, h1, h3, section, article {
+    margin: 0;
+    padding: 0;
+    border: 0;
+}
+
+/* Style rule for body */
+body {
+	background-color: #dfe7c4;
+}
+
+/* Style rule for header */
+header {
+	font-family: Verdana, Arial, sans-serif;
+	margin-top: 0.2em;
+	background-color: #628c45;
+	color: #dfe7c4;
+	padding: 2%;
+    text-align: center;
+}
+
+/* Style rules for main content  */
+main {
+	background-color: #fff;
+}
+
+section {
+	float: left;
+	width: 29%;
+	padding: 2%;
+}
+
+article {
+	content: " ";
+	display: table;
+	clear: left;
+}
+
+section:nth-of-type(2)
+{
+	border-right: green solid 1px;
+	border-left: green solid 1px;
+
+}
+
+aside {
+    padding: 2%;
+}
+
+footer {
+	font-size: .70em;
+	text-align: center;
+}
