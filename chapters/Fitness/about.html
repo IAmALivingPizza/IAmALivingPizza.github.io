@@ -17,13 +17,29 @@
 
 <body>
 	<div id="container">
+
+		<!-- Mobile Nav -->
+		<nav class="mobile-nav">
+			<div id="menu-links">
+				<a href="index.html">Home</a>
+				<a href="about.html">About Us</a>
+				<a href="classes.html">Classes</a>
+				<a href="nutrition.html">Nutrition</a>
+				<a href="contact.html">Contact Us</a>
+			</div>
+			<a class="menu-icon">
+				<div>&#9776;</div>
+			</a>
+		</nav>
+
 		<!-- Put website name and/or long in header -->
-		<header>
+		<header id="ffc-logo">
 			<a href="index.html"><img src="images/forward-fitness-logo.png"
 				alt="Forward Fitness Club Logo"></a>
 		</header>
 
-		<nav>
+		<!-- Tablet, Desktop Nav -->
+		<nav class="tablet-desktop">
 			<ul>
 				<li><a href="index.html">Home</a></li>
 				<li><a href="about.html">About Us</a></li>
@@ -33,6 +49,15 @@
 			</ul>
 		</nav>
 		<main>
+
+			<video controls poster="images/hero-image.jpg">
+				<source src="media/fcc_video.mp4" type="video/mp4">
+				<source src="media/ffc_video.webm" type="video/webm">
+				<track src="media/captions.vtt" kind="captions" srclang="en" label="Captions">
+				<track src="media/descriptions.vtt" kind="descriptions" srclang="en" label="English Descriptions">
+				<p>Your browser does not support the video element.</p>
+			</video>
+
 			<section id="weights">
 				<h1>Weights</h1>
 				<img src="images/people-with-weights.jpg"
