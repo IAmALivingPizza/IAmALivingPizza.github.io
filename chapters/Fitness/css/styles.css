@@ -229,7 +229,7 @@ form #submit  {
 	}
 	nav li{
 		font-size: 1.5em;
-		font-family: 'Francois One' sans-serif;
+		font-family: 'Francois One', sans-serif;
 		display: inline-block;
 		border-right: 1px solid #fff;
 	}
@@ -297,6 +297,15 @@ form #submit  {
 	}
 	#exercises dd{
 		padding: .5% 1% 2% 0;
+	}
+
+	.viewex {
+		font-weight: bold;
+		cursor: pointer;
+	}
+
+	#example {
+		display: none;
 	}
 
 	.tel-num{
@@ -416,6 +425,11 @@ form #submit  {
 	}
 	#exercises{
 		clear: left;
+	}
+
+	.offer:hover {
+		transform: scale(1.25);
+		cursor: pointer;
 	}
 
 	/* Desktop Viewport: Style rules for form elements */
