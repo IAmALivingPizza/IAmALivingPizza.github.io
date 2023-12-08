@@ -27,7 +27,7 @@
 				<a href="nutrition.html">Nutrition</a>
 				<a href="contact.html">Contact Us</a>
 			</div>
-			<a class="menu-icon">
+			<a class="menu-icon" onclick="hamburger()">
 				<div>&#9776;</div>
 			</a>
 		</nav>
@@ -118,19 +118,27 @@
 						a squat and extend your hands forward,
 						kick your feet back and then forward
 						again quickly, and then jump up from a
-						squattted position. </dd>
+						squattted position. <span class="viewex" onclick="burpees()"> View Example.</span></dd>
 					<dt>Plank</dt>
 					<dd>Planks build your core strength. To
 						perform a plank, get in a push up position
 						and rest your forearms on the floor. Hold 
-						the position as long as you can. </dd>
+						the position as long as you can. <span class="viewex" onclick="plank()"> View Example.</span></dd>
 					<dt>Mountain Climbing</dt>
 					<dd>Mountain climbers are a good cardio exercise.
 						Place your hands on the floor in a push up
 						position, then bring one knee up to your
 						chest and then switch as quickly as you can
-						(as though you are climbing a mountain).</dd>
+						(as though you are climbing a mountain). <span class="viewex" onclick="mountain()"> View Example.</span></dd>
 				</dl>
+
+				<video controls id="example">
+					<source id="vid-src" src="vid" type="video/mp4">
+					<track id="despsrc" src="des" kind="descriptions" srclang="en"
+					label="English Descriptions">
+					<p>Your browser deos not support the video element.</p>
+				</video>
+
 				<p>For more information about how to stay active,
 					visit the <a href="https://www.hhs.gov/fitness/be-active/index.html"
 					target="_blank" class="external-link">U.S. Department of Health and Human
@@ -142,6 +150,9 @@
 			<p><a href="mailto:forwardfitness@club.net">
 				forwardfitness@club.net</a></p>
 		</footer>
-	</div>	
+	</div>
+
+	<script src="scripts/script.js"></script>
+
 </body>
 </html>
