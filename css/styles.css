@@ -1,4 +1,4 @@
-body, header, nav, main, footer, h1, div, img, ul{
+body, header, nav, main, footer, h1, div, img, ul, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -8,6 +8,7 @@ body {
 	background-color: #152238;
 	/*background-position: center;*/
 }
+
 #WWII {
 	display: block;
 	width: 1000px;
@@ -16,6 +17,7 @@ body {
 	float: right;
 	margin: 0 5em 4em;
 }
+
 .webpage {
 	background-color: lightGray;
 	border: 5px ridge black;
@@ -29,6 +31,7 @@ header {
 	width: 85%;
 	border-radius: 70px;
 }
+
 header h1 {
 	text-align: center;
 	font-size: 100px;
@@ -145,6 +148,29 @@ td a {
 	font-style: 50px;
 }
 
+.favorites {
+	font-size: 20px;
+}
+
+.favorites img {
+	width: 30%;
+	margin-left: 35%;
+	margin-top: 3px;
+}
+
+.favorites video {
+	width: 30%;
+	margin-left: 35%;
+}
+
+.soundtracks {
+	float: right;
+}
+
+.favorites audio {
+	column-count: 3;
+}
+
 #team-fortress-2 {
 	background-color: tan;
 	border: 5px solid black;
@@ -152,6 +178,26 @@ td a {
 
 #overwatch-2 {
 	background-color: white;
+	border: 5px solid black;
+}
+
+#pvz {
+	background-color: purple;
+	border: 5px solid black;
+}
+
+#persona {
+	background-color: Red;
+	border: 5px solid black;
+}
+
+#fortnite {
+	background-color: lightBlue;
+	border: 5px solid black;
+}
+
+#lego {
+	background-color: lightGray;
 	border: 5px solid black;
 }
 
@@ -169,6 +215,10 @@ td a {
 
 #form h2 {
 	text-align: center;
+}
+
+input {
+	border-radius: 5px;
 }
 
 fieldset, input, select, textarea {
