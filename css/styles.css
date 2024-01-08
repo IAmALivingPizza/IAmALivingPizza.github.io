@@ -1,4 +1,4 @@
-body, header, nav, main, footer, h1, div, img, ul, video{
+body, header, nav, main, footer, h1, div, img, ul, audio, video{
 	margin: 0;
 	padding: 0;
 	border: 0;
@@ -6,16 +6,29 @@ body, header, nav, main, footer, h1, div, img, ul, video{
 
 body {
 	background-color: #152238;
-	/*background-position: center;*/
 }
 
 #WWII {
-	display: block;
-	width: 1000px;
-	height: 450px;
-	border: 5px ridge black;
-	float: right;
-	margin: 0 5em 4em;
+	display: none;
+}
+
+h6 {
+	display: none;
+}
+
+.skip {
+	position: absolute;
+	left: -999px;
+}
+
+.skip:focus {
+	color: red;
+	font-family: 'Pixelify Sans', serif;
+	text-decoration: none;
+	padding: 0.5%;
+	top: auto;
+	left: auto;
+	right: 1px;
 }
 
 .webpage {
@@ -34,42 +47,31 @@ header {
 
 header h1 {
 	text-align: center;
-	font-size: 100px;
+	font-size: 50px;
 	font-family: 'Pixelify Sans', serif;
+}
+
+/* Style rules for hamburger menu */
+.mobile-nav a {
+	color: lightGray;
+	font-family: 'Pixelify Sans', serif;
+	text-align: center;
+	font-size: 2em;
+	text-decoration: none;
+	padding: 3%;
+	display: block;
+}
+
+.mobile-nav a.menu-icon {
+	display: block;
+	position: absolute;
+	right: 0;
+	top: 0;
 }
 
 nav {
-	width: 100%;
-}
-
-nav ul {
-	list-style-type: none;
-	margin: 0 2%;
-	text-align: center;
-	
-}
-
-nav li {
-	display: block;
-	margin: 1em;
-	font-family: 'Pixelify Sans', serif;
-	font-size: 1.75em;
-	font-weight: bold;
-	background-color: lightGray;
-	border: #000 ridge 5px;
-	border-radius: 20px;
-}
-
-nav li a {
-	display: block;
-	text-decoration: none;
-	color: black;
-	padding: .5em 1em;
-}
-
-nav li:hover {
-	background: gray 20px;
-	box-shadow: 5px 5px 10px yellow;
+	padding: 1%;
+	margin-bottom: 1%;
 }
 
 main h1 {
@@ -102,10 +104,13 @@ a {
 }
 
 #funny1 {
-	width: 500px;
-	height: 450px;
+	width: 300px;
+	height: 300px;
 	border: 5px ridge black;
-	margin: 0 5em 4em;
+	margin-left: 9%;
+	margin-right: 9%;
+	margin-top: 2%;
+	margin-bottom: 2%;
 }
 
 table {
@@ -165,6 +170,13 @@ td a {
 
 .soundtracks {
 	float: right;
+	margin-right: 50px;
+	border: 1px ridge black;
+}
+
+.soundtracks li {
+	list-style-type: none;
+	margin-top: 10px;
 }
 
 .favorites audio {
@@ -173,44 +185,44 @@ td a {
 
 #team-fortress-2 {
 	background-color: tan;
-	border: 5px solid black;
+	border: 5px ridge black;
 }
 
 #overwatch-2 {
 	background-color: white;
-	border: 5px solid black;
+	border: 5px ridge black;
 }
 
 #pvz {
 	background-color: purple;
-	border: 5px solid black;
+	border: 5px ridge black;
 }
 
 #persona {
 	background-color: Red;
-	border: 5px solid black;
+	border: 5px ridge black;
 }
 
 #fortnite {
 	background-color: lightBlue;
-	border: 5px solid black;
+	border: 5px ridge black;
 }
 
 #lego {
 	background-color: lightGray;
-	border: 5px solid black;
+	border: 5px ridge black;
 }
 
 #ambrose-world {
-	border: 5px solid #000;
+	border: 5px ridge #000;
 	width: 100%;
 }
 
 #form {
 	margin-top: 2%;
-	background-color: pink;
 	padding: 2%;
 	width: auto;
+	font-family: 'Pixelify Sans', serif;
 }
 
 #form h2 {
@@ -241,13 +253,21 @@ label {
 	font-size: 25px;
 }
 
- /*audio {
-	display: none;
-}*/
+form #submit {
+	margin: 0 auto;
+	border: none;
+	display: block;
+	padding: 2%;
+	background-color: lightGreen;
+	font-size: 2.5em;
+	color: teal;
+	border-radius: 10px;
+}
 
-footer {
+footer .email {
 	bottom: 0;
 }
+
 footer p {
 	text-align: center;
 }
@@ -255,4 +275,282 @@ footer p {
 footer p a {
 	text-decoration: none;
 	color: black;
+}
+
+.social {
+	float: right;
+	width: 20%;
+	padding: 2%;
+}
+
+.social img {
+	display: inline-block;
+	padding: 5%;
+	height: 50px;
+}
+
+.tablet-desktop, #menu-links {
+	display: none;
+}
+
+/*Media Query for Tablet Viewport*/
+@media screen and (min-width: 630px), print{
+	.tablet-desktop {
+		display: block;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0 2%;
+		text-align: center;
+		
+	}
+
+	nav li {
+		display: inline-block;
+		margin: 1em;
+		font-family: 'Pixelify Sans', serif;
+		font-size: 1.75em;
+		font-weight: bold;
+		background-color: lightGray;
+		border: #000 ridge 5px;
+		border-radius: 20px;
+	}
+
+	nav li a {
+		display: block;
+		text-decoration: none;
+		color: black;
+		padding: .5em 1em;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	#WWII {
+		display: none;
+	}
+
+	h6 {
+		display: none;
+	}
+
+	legend {
+		text-align: center;
+		font-size: 35px;
+	}
+
+}
+
+/*Media Query for Desktop Viewport*/
+@media screen and (min-width: 1015px), print{
+
+	#how-to {
+		text-align: center;
+		font-size: 25px;
+		font-family: 'Pixelify Sans', serif;
+	}
+
+	#WWII {
+		display: block;
+		width: 600px;
+		height: 450px;
+		border: 5px ridge black;
+		float: right;
+		margin: 0 5em 4em;
+	}
+
+	.webpage {
+		background-color: lightGray;
+		border: 5px ridge black;
+		border-radius: 20px;
+	}
+
+	header {
+		border: 5px ridge black;
+		background-color: purple;
+		margin: 0 auto;
+		width: 85%;
+		border-radius: 70px;
+	}
+
+	header h1 {
+		text-align: center;
+		font-size: 100px;
+		font-family: 'Pixelify Sans', serif;
+	}
+
+	nav {
+		width: 100%;
+	}
+
+	nav ul {
+		list-style-type: none;
+		margin: 0 2%;
+		text-align: center;
+		
+	}
+
+	nav li {
+		display: block;
+		margin: 1em;
+		font-family: 'Pixelify Sans', serif;
+		font-size: 1.75em;
+		font-weight: bold;
+		background-color: lightGray;
+		border: #000 ridge 5px;
+		border-radius: 20px;
+	}
+
+	nav li a {
+		display: block;
+		text-decoration: none;
+		color: black;
+		padding: .5em 1em;
+	}
+
+	nav li:hover {
+		background: gray 20px;
+		box-shadow: 5px 5px 10px yellow;
+		transform: scale(0.9);
+	}
+
+	.tablet-desktop {
+		display: inline-block;
+	}
+
+	.mobile-nav {
+		display: none;
+	}
+
+	main h1 {
+		text-align: center;
+	}
+
+	main h2 {
+		text-align: center;
+	}
+
+	main h6 {
+		text-align: center;
+	}
+
+	#funny1 {
+		width: 500px;
+		height: 450px;
+		border: 5px ridge black;
+		margin: 0 5em 4em;
+	}
+
+	table {
+		border: 1px solid #000;
+		border-collapse: collapse;
+		margin: 0 auto;
+		width: 100%;
+	}
+
+	caption {
+		font-size: 1.5em;
+		font-weight: bold;
+		padding: 1%;
+	}
+
+	/*td a:hover {
+		color: blue;
+	}*/
+
+	td, th {
+		border: 1px solid #000;
+		padding: 2%;
+	}
+
+	th {
+		background-color: #000;
+		color: #fff;
+		font-size: 1.15em;
+		border: 1px solid #fff;
+	}
+
+	td {
+		text-align: center;
+		background-color: #fff;
+	}
+
+	td a {
+		text-decoration: none;
+		color: #000;
+		font-style: 50px;
+	}
+
+	#ambrose-world {
+		border: 5px ridge #000;
+		width: 100%;
+		height: 300px;
+	}
+
+	input {
+		border-radius: 5px;
+	}
+
+	fieldset, input, select, textarea {
+		margin-top: 0.5%;
+		margin-bottom: 2%;
+	}
+
+	fieldset legend {
+		font-weight: bold;
+		font-size: 35px;
+		text-align: center;
+	}
+
+	.form-grid {
+		display: grid;
+		grid-template-columns: auto auto auto;
+		grid-gap: 20px;
+	}
+
+	fieldset p {
+		font-size: 25px;
+	}
+
+	label {
+		display: block;
+		padding-top: 3%;
+		font-size: 25px;
+	}
+
+	.btn {
+		grid-column: 1 / 3 span 3;
+	}
+
+	form #submit {
+		margin: 0 auto;
+		border: none;
+		padding: 2%;
+		background-color: lightGreen;
+		font-size: 2.5em;
+		color: teal;
+		border-radius: 10px;
+	}
+
+	/*audio {
+		display: none;
+	}*/
+
+	footer {
+		bottom: 0;
+	}
+	footer p {
+		text-align: center;
+	}
+
+	footer p a {
+		text-decoration: none;
+		color: black;
+	}
 }
