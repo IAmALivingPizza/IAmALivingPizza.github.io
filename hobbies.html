@@ -3,20 +3,39 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Hobbies</title>
+	<title>Hobbies | Lucas Rosenberger's Webpage</title>
 	<link rel="icon" href="images/pizza.jpg">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Do you make video game?">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Pixelify+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
+
+	<!-- Skip to Content Link -->
+	<a class="skip" href="#content">Skip to Content</a>
+
+	<!-- Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">My Projects</a>
+			<a href="resume.html">My Resume</a>
+			<a href="hobbies.html">Hobbies</a>
+			<a href="about.html">About Me</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+	
 	<!-- Put website name and/or long in header -->
-	<header>
+	<header id="lucas-logo">
 		<h1>Hobbies</h1>
 	</header>
-	<nav>
+	<nav class="tablet-desktop">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="projects.html">My Projects</a></li>
@@ -25,11 +44,13 @@
 			<li><a href="about.html">About Me</a></li>
 		</ul>
 	</nav>
-	<main>
+	<main id="content">
 		<div class="favorites">
 			<div id="team-fortress-2">
 				<img src="images/favorites/team-fortress-2.jpg" alt="Team Fortress 2 Logo">
 				<p>Why I Enjoy This Game:</p>
+				<input class="star star-1" id="star-1" type="radio" name="star" title="One Star">
+				<label class="star star-1" for="star-1"></label>
 				<video controls>
 					<source src="media/ffc_video.mp4" type="video/mp4">
 					<p>Your browser does not support the video element.</p>
@@ -54,6 +75,19 @@
 					<source src="media/ffc_video.mp4" type="video/mp4">
 					<p>Your browser does not support the video element.</p>
 				</video>
+				<div class="soundtracks">
+				<ul>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+				</ul>
+				</div>
 			</div>
 			<div id="pvz">
 				<p>Why I Enjoy This Game:</p>
@@ -61,6 +95,19 @@
 					<source src="media/ffc_video.mp4" type="video/mp4">
 					<p>Your browser does not support the video element.</p>
 				</video>
+				<div class="soundtracks">
+				<ul>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+				</ul>
+				</div>
 			</div>
 			<div id="persona">
 				<p>Why I Enjoy This Game:</p>
@@ -68,6 +115,19 @@
 					<source src="media/ffc_video.mp4" type="video/mp4">
 					<p>Your browser does not support the video element.</p>
 				</video>
+				<div class="soundtracks">
+				<ul>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+				</ul>
+				</div>
 			</div>
 			<div id="fortnite">
 				<p>Why I Enjoy This Game:</p>
@@ -75,6 +135,19 @@
 					<source src="media/ffc_video.mp4" type="video/mp4">
 					<p>Your browser does not support the video element.</p>
 				</video>
+				<div class="soundtracks">
+				<ul>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+				</ul>
+				</div>
 			</div>
 			<div id="lego">
 				<p>Why I Enjoy This Game:</p>
@@ -82,11 +155,48 @@
 					<source src="media/ffc_video.mp4" type="video/mp4">
 					<p>Your browser does not support the video element.</p>
 				</video>
+				<div class="soundtracks">
+				<ul>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+					<li><audio controls>
+						<source src="media/ffc_audio.mp3" type="audio/mp3">
+					</audio></li>
+				</ul>
+				</div>
 			</div>
+		</div>
+
+		<div id="how-to">
+			<p>How To The Perfect Sandwich</p>
+			<ul>
+				<li>1. Put ham on the bottom loaf of bread.</li>
+				<li>2. Put cheese on the ham.</li>
+				<li>3. Put lettuce on the cheese.</li>
+				<li>4. Put tomatoes on the lettuce.</li>
+				<li>5. Put broken glass on the tomatoes</li>
+				<li>6. Put the top loaf on the tomatoes.</li>
+				<li>7. Throw the sandwich in the garbage.</li>
+			</ul>
 		</div>
 	</main>
 	<footer>
-		<p>Email Me At <a href="mailto:lucas.rosenberger@gmail.com">lucas.rosenberger@gmail.com</a></p>
+
+		<div class="email">
+			<p>Email Me At <a href="mailto:lucas.rosenberger@gmail.com">lucas.rosenberger@gmail.com</a></p>
+		</div>
+
+		<div class="social">
+			<a href="https://steamcommunity.com/profiles/76561199467024748/"><img src="images/socials/steam-logo.jpg" alt="Steam Logo"></a>
+			<a href="https://steamcommunity.com/profiles/76561199467024748/"><img src="images/socials/github-logo.jpg" alt="GitHub Logo"></a>
+		</div>
+
 	</footer>
+
+	<script src="scripts/script.js"></script>
 </body>
 </html>

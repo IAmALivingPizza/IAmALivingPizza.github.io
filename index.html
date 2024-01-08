@@ -3,20 +3,39 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>Lucas Rosenberger's Webpage</title>
+	<title>Home | Lucas Rosenberger's Webpage</title>
 	<link rel="icon" href="images/pizza.jpg">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="Where dreams come to die.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Pixelify+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
+
+	<!-- Skip to Content Link -->
+	<a class="skip" href="#content">Skip to Content</a>
+
+	<!-- Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">My Projects</a>
+			<a href="resume.html">My Resume</a>
+			<a href="hobbies.html">Hobbies</a>
+			<a href="about.html">About Me</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+
 	<!-- Put website name and/or long in header -->
-	<header>
+	<header id="lucas-logo">
 		<h1><span style="color: red">L</a><span style="color: blue">u</a><span style="color: green">c</a><span style="color: yellow">a</a><span style="color: orange">s</a> <a style="color: red">R</a><a style="color: blue">o</a><a style="color: green">s</a><a style="color: yellow">e</a><a style="color: orange">n</a><a style="color: red">b</a><a style="color: blue">e</a><a style="color: green">r</a><a style="color: yellow">g</a><a style="color: orange">e</a><a style="color: red">r</a><a style="color: blue">'</a><a style="color: green">s</a> <a style="color: red">W</a><a style="color: blue">e</a><a style="color: green">b</a><a style="color: yellow">p</a><a style="color: orange">a</a><a style="color: red">g</a><a style="color: blue">e</a></h1>
 	</header>
-	<nav>
+	<nav class="tablet-desktop">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="projects.html">My Projects</a></li>
@@ -25,7 +44,7 @@
 			<li><a href="about.html">About Me</a></li>
 		</ul>
 	</nav>
-	<main>
+	<main id="content">
 	<iframe src="music/rain.wav" allow="autoplay" id="audio" style="display: none"></iframe>
 	<!-- <audio controls autoplay loop>
 		<source src="music/rain.wav" type="audio/wav">
@@ -35,7 +54,7 @@
 		<h1 id="first">My name is Lucas Rosenberger and I am currently a senior at North Royalton High School. I go to the Cuyahoga Valley Career Center (CVCC), where I am taking Computer Programming.</h1>
 		
 		<h1 id="second">When I gradute from my High School, I am going to Kent State University to major in Video Game Development and Design.</h1>
-		
+
 		<h6>Here is a World War 2 Wikipedia page for no reason</h6>
 		
 		<img id="funny1" src="images/funny_meme01.jpg" alt="Very Funny Meme">
@@ -45,7 +64,19 @@
 	</div>
 	</main>
 	<footer>
-		<p>Email Me At <a href="mailto:lucas.rosenberger@gmail.com">lucas.rosenberger@gmail.com</a></p>
+
+		<div class="email">
+			<p>Email Me At <a href="mailto:lucas.rosenberger@gmail.com">lucas.rosenberger@gmail.com</a></p>
+		</div>
+
+		<div class="social">
+			<a href="https://steamcommunity.com/profiles/76561199467024748/" target="_blank"><img src="images/socials/steam-logo.jpg" alt="Steam Logo"></a>
+			<a href="https://steamcommunity.com/profiles/76561199467024748/" target="_blank"><img src="images/socials/github-logo.jpg" alt="GitHub Logo"></a>
+		</div>
+
 	</footer>
+
+	<script src="scripts/script.js"></script>
+
 </body>
 </html>

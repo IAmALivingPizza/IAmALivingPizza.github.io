@@ -3,20 +3,39 @@
 <html lang="en">
 <head>
 	<meta charset="utf-8">
-	<title>About Me</title>
+	<title>About Me | Lucas Rosenberger's Webpage</title>
 	<link rel="icon" href="images/pizza.jpg">
 	<link rel="stylesheet" href="css/styles.css">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta name="description" content="My name is not Jeff.">
 	<link rel="preconnect" href="https://fonts.googleapis.com">
 	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 	<link href="https://fonts.googleapis.com/css2?family=Francois+One&family=Pixelify+Sans&family=Roboto+Slab&display=swap" rel="stylesheet">
 </head>
 <body>
+
+	<!-- Skip to Content Link -->
+	<a class="skip" href="#content">Skip to Content</a>
+
+	<!-- Mobile Nav-->
+	<nav class="mobile-nav">
+		<div id="menu-links">
+			<a href="index.html">Home</a>
+			<a href="projects.html">My Projects</a>
+			<a href="resume.html">My Resume</a>
+			<a href="hobbies.html">Hobbies</a>
+			<a href="about.html">About Me</a>
+		</div>
+		<a class="menu-icon" onclick="hamburger()">
+			<div>&#9776;</div>
+		</a>
+	</nav>
+	
 	<!-- Put website name and/or long in header -->
-	<header>
+	<header id="lucas-logo">
 		<h1>About Me</h1>
 	</header>
-	<nav>
+	<nav class="tablet-desktop">
 		<ul>
 			<li><a href="index.html">Home</a></li>
 			<li><a href="projects.html">My Projects</a></li>
@@ -33,7 +52,7 @@
 
 		<h2>Complete The Sussy Form To Unlock Epic John Paul Whistle Powers😲!!!</h2>
 
-		<form>
+		<form class="form-grid">
 
 			<fieldset>
 				<legend>Your Information</legend>
@@ -63,11 +82,152 @@
 
 				<label for="freddy"><input type="checkbox" name="interest" id="freddy" value="Who Is The Man Behind The Slaughter?">Who Is The Man Behind The Slaughter?</label>
 			</fieldset>
+
+			<fieldset>
+				<legend>Tell Me Something</legend>
+				
+				<label for="reference">What is Your Favorite Video Game?</label>
+				<select name="reference">
+					<option value="game">Super Mario Series</option>
+					<option value="game">The Legend of Zelda Series</option>
+					<option value="game">Team Fortress Series</option>
+					<option value="game">Half-Life Series</option>
+					<option value="game">Five Nights At Freddy's Series</option>
+					<option value="game">Minecraft Series</option>
+					<option value="game">Plants Vs. Zombies Series</option>
+					<option value="game">Persona Series</option>
+					<option value="game">Portal Series</option>
+					<option value="game">Final Fantasy Series</option>
+					<option value="game">Kingdom Hearts Series</option>
+					<option value="game">Resident Evil Series</option>
+					<option value="game">Mother (Earthbound) Series</option>
+					<option value="game">Dead Space Series</option>
+					<option value="game">Silent Hill Series</option>
+					<option value="game">Devil May Cry Series</option>
+					<option value="game">Super Meat Boy Series</option>
+					<option value="game">Metroid Series</option>
+					<option value="game">Angry Birds Series</option>
+					<option value="game">Kirby Series</option>
+					<option value="game">Soul Hackers Series</option>
+					<option value="game">Star Fox Series</option>
+					<option value="game">Ace Attorney Series</option>
+					<option value="game">Left 4 Dead Series</option>
+					<option value="game">Sonic The Hedgehog Series</option>
+					<option value="game">Crash Bandicoot Series</option>
+					<option value="game">Street Fighter Series</option>
+					<option value="game">Day of Defeat Series</option>
+					<option value="game">Dark Souls Series</option>
+					<option value="game">F.E.A.R. Series</option>
+					<option value="game">Call of Duty Series</option>
+					<option value="game">Halo Series</option>
+					<option value="game">Super Smash Bros. Series</option>
+					<option value="game">Animal Crossing Series</option>
+					<option value="game">Pikmin Series</option>
+					<option value="game">Little Nightmares Series</options>
+					<option value="game">Little Big Planet Series</option>
+					<option value="game">Pokémon Series</option>
+					<option value="game">Battlefield Series</option>
+					<option value="game">Danganronpa Series</option>
+					<option value="game">Nier Automata Series</option>
+					<option value="game">Spyro The Dragon Series</option>
+					<option value="game">Mii Series</option>
+					<option value="game">Overwatch Series</option>
+					<option value="game">Castlevania</option>
+					<option value="game">Far Cry Series</option>
+					<option value="game">Twisted Metal Series</option>
+					<option value="game">Fallout Series</option>
+					<option value="game">Horizon Series</option>
+					<option value="game">Pac-Man Series</option>
+					<option value="game">Guitar Hero Series</option>
+					<option value="game">Virtua Fighter Series</option>
+					<option value="game">Dead or Alive Series</option>
+					<option value="game">Mario Kart Series</option>
+					<option value="game">Mario Party Series</option>
+					<option value="game">Mario Sports Series</option>
+					<option value="game">Mario & Luigi Series</option>
+					<option value="game">Paper Mario Series</option>
+					<option value="game">Undertale Series</option>
+					<option value="game">Warioware Series</option>
+					<option value="game">Luigi's Mansion Series</option>
+					<option value="game">Banjo-Kazooie Series</option>
+					<option value="game">Doom Series</option>
+					<option value="game">F-Zero Series</option>
+					<option value="game">Time Splitters Series</option>
+					<option value="game">Dota Series</option>
+					<option value="game">Outlast Series</option>
+					<option value="game">Donkey Kong Series</option>
+					<option value="game">Grand Theft Auto Series</option>
+					<option value="game">Saints Row Series</option>
+					<option value="game">Rhythm Heaven Series</option>
+					<option value="game">Contra Series</option>
+					<option value="game">Mega Man Series</option>
+					<option value="game">Fable Series</option>
+					<option value="game">Tom Clancy Series</option>
+					<option value="game">Don't Starve Series</option>
+					<option value="game">Tekken Series</option>
+					<option value="game">Cooking Mama Series</option>
+					<option value="game">Forza Horizon Series</option>
+					<option value="game">Harvest Moon Series</option>
+					<option value="game">Kid Icarus Series</option>
+					<option value="game">Metal Gear Series</option>
+					<option value="game">The Last of Us Series</option>
+					<option value="game">Grand Turismo Series</option>
+					<option value="game">Hearts of Iron Series</option>
+					<ooption value="game">The Sims Series</ooption>
+					<option value="game">The Elder Scrolls Series</option>
+					<option value="game">Goat Simulator Series</option>
+					<option value="game">Ghost & Goblins Series</option>
+					<option value="game">Sim City Series</option>
+					<option value="game">RollerCoaster Tycoon Series</option>
+					<option value="game">Pilot Wings Series</option>
+					<option value="game">Dead Island Series</option>
+					<option value="game">Punch-Out!! Series</option>
+					<option value="game">Farming Simulator Series</option>
+					<option value="game">Tony Hawk Pro Skater Series</option>
+					<option value="game">Civilization Series</option>
+					<option value="game">Assassin's Creed Series</option>
+					<option value="game">Sly Cooper Series</option>
+					<option value="game">Nintendogs Series</option>
+					<option value="game">Brain Age Series</option>
+					<option value="game">Jackbox Party Series</option>
+					<option value="game">Kack and Daxter Series</option>
+					<option value="game">Ratchet and Clank Series</option>
+					<option value="game">Payday Series</option>
+					<option value="game">God of War Series</option>
+					<option value="game">Gears of War Series</option>
+					<option value="game">Cuphead Series</option>
+					<option value="game">Henry Stickman Series</option>
+					<option value="game">Yakuza Series</option>
+					<option value="game">Mafia Series</option>
+					<option value="game">Chibi-Robo Series</option>
+					<option value="game">Bioshock Series</option>
+					<option value="game">Rayman Series</option>
+					<option value="game">The Binding of Isaac Series</option>
+					<option value="game">Cult of the Lamb Series</option>
+					<option value="game">Hollow Knight Series</option>
+					<option value="game">Shovel Knight Series</option>
+					<option value="game">Dead Rising Series</option>
+					<option value="game">Professor Layton Series</option>
+				</select>
+			</fieldset>
+
+			<input type="submit" id="submit" value="Submit" class="btn">
 		</form>
 	</div>
 
 	<footer>
-		<p>Email Me At <a href="mailto:lucas.rosenberger@gmail.com">lucas.rosenberger@gmail.com</a></p>
+
+		<div class="email">
+			<p>Email Me At <a href="mailto:lucas.rosenberger@gmail.com">lucas.rosenberger@gmail.com</a></p>
+		</div>
+
+		<div class="social">
+			<a href="https://steamcommunity.com/profiles/76561199467024748/"><img src="images/socials/steam-logo.jpg" alt="Steam Logo"></a>
+			<a href="https://steamcommunity.com/profiles/76561199467024748/"><img src="images/socials/github-logo.jpg" alt="GitHub Logo"></a>
+		</div>
+
 	</footer>
+
+	<script src="scripts/script.js"></script>
 </body>
 </html>
