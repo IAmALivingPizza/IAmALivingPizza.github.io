@@ -37,6 +37,57 @@ h6 {
 	border-radius: 20px;
 }
 
+div.jumbotron {
+	position: relative;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0;
+	padding: 0;
+	height: 60vh;
+	background-image: url(../images/mario-dance.gif);
+	background-size: 10%;
+	border: 5px ridge black;
+	user-select: none;
+}
+
+div.jumbotron div.jt-title {
+	z-index: 10;
+	pointer-events: none;
+}
+
+div.jumbotron h1 {
+	margin: auto;
+	top: 0px;
+	font-size: 10vw;
+	font-weight: 900;
+	text-align: center;
+	opacity: 100;
+	font-family: 'Pixelify Sans', serif;
+}
+
+@keyframes typing {
+	from { width: 0}
+	to { width: 50%}
+}
+
+div.jumbotron h2 {
+	position: relative;
+	margin: -2vw auto;
+	z-index: 9;
+	font-size: 3vw;
+	font-weight: 900;
+	text-align: center;
+	opacity: 100;
+	font-family: 'Pixelify Sans', serif;
+	pointer-events: all;
+	overflow: hidden;
+	border-right: .15em solid white;
+	white-space: nowrap;
+	margin: 0 auto;
+	animation: typing 2.5s steps(40, end);
+}
+
 header {
 	border: 5px ridge black;
 	background-color: purple;
@@ -336,6 +387,7 @@ footer p a {
 		display: none;
 	}
 
+
 	h6 {
 		display: none;
 	}
@@ -356,7 +408,7 @@ footer p a {
 		font-family: 'Pixelify Sans', serif;
 	}
 
-	#WWII {
+	#WWII{
 		display: block;
 		width: 600px;
 		height: 450px;
@@ -365,11 +417,16 @@ footer p a {
 		margin: 0 5em 4em;
 	}
 
-	.webpage {
-		background-color: lightGray;
+	#resume {
+		display: block;
+		width: 1000px;
+		height: 500px;
 		border: 5px ridge black;
-		border-radius: 20px;
+		margin: 0 auto;
+		margin-top: 5%;
+		margin-bottom: 5%;
 	}
+
 
 	header {
 		border: 5px ridge black;
