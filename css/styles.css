@@ -64,6 +64,7 @@ div.jumbotron h1 {
 	text-align: center;
 	opacity: 100;
 	font-family: 'Pixelify Sans', serif;
+	color: white;
 }
 
 @keyframes typing {
@@ -80,6 +81,7 @@ div.jumbotron h2 {
 	text-align: center;
 	opacity: 100;
 	font-family: 'Pixelify Sans', serif;
+	color: white;
 	pointer-events: all;
 	overflow: hidden;
 	border-right: .15em solid white;
