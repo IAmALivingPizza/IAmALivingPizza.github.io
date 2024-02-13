@@ -14,15 +14,19 @@ const splashTextOptions = [
     "For Reals?",
     "It Just Works",
     "Ctrl+C & Ctrl+V Is The Only Way",
-    "Brian, Do Your Work"
+    "Brian, Do Your Work",
+    "2 Access 2 Furious",
+    "Nintendo, Hire This Man",
+    "Where Dreams Come To Die",
+    "Stealing Your Code Is A Canon Event"
 ];
 
-/*function howManySplashText() {
+function howManySplashText() {
     var selection = splashTextOptions[splashTextOptions.length - 1];
 
     console.log(selection);
     splashText.innerHTML = selection;
-}*/
+}
 
 function pickSplashText() {
     var selection = splashTextOptions[Math.floor(Math.random() * splashTextOptions.length)];
