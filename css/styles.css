@@ -69,7 +69,7 @@ div.jumbotron h1 {
 
 @keyframes typing {
 	from { width: 0}
-	to { width: 50%}
+	to { width: 100%}
 }
 
 div.jumbotron h2 {
@@ -87,7 +87,7 @@ div.jumbotron h2 {
 	border-right: .15em solid white;
 	white-space: nowrap;
 	margin: 0 auto;
-	animation: typing 2.5s steps(40, end);
+	animation: typing 2.0s steps(45);
 }
 
 header {
@@ -141,10 +141,12 @@ main h6 {
 
 #first {
 	color: purple;
+	font-family: 'Pixelify Sans', serif;
 }
 
 #second {
 	color: darkCyan;
+	font-family: 'Pixelify Sans', serif;
 }
 
 #about-main {
@@ -193,11 +195,14 @@ th {
 	color: #fff;
 	font-size: 1.15em;
 	border: 1px solid #fff;
+	font-family: 'Pixelify Sans', serif;
 }
 
 td {
 	text-align: center;
 	background-color: #fff;
+	font-family: 'Pixelify Sans', serif;
+	font-weight: bold;
 }
 
 td a {
@@ -280,30 +285,36 @@ td a {
 
 #form h2 {
 	text-align: center;
+	color: orange;
 }
 
 input {
 	border-radius: 5px;
+	font-family: 'Pixelify Sans', serif;
 }
 
 fieldset, input, select, textarea {
 	margin-top: 0.5%;
 	margin-bottom: 2%;
+	font-family: 'Pixelify Sans', serif;
 }
 
 fieldset legend {
 	font-weight: bold;
 	font-size: 50px;
+	color: orange;
 }
 
 fieldset p {
 	font-size: 25px;
+	color: orange;
 }
 
 label {
 	display: block;
 	padding-top: 3%;
 	font-size: 25px;
+	color: orange;
 }
 
 form #submit {
@@ -315,6 +326,7 @@ form #submit {
 	font-size: 2.5em;
 	color: teal;
 	border-radius: 10px;
+	font-family: 'Pixelify Sans', serif;
 }
 
 footer .email {
@@ -323,6 +335,7 @@ footer .email {
 
 footer p {
 	text-align: center;
+	font-family: 'Pixelify Sans', serif;
 }
 
 footer p a {
